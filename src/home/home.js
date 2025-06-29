@@ -29,14 +29,16 @@ const PortfolioHomepage = () => {
 
   return (
     <div className="portfolio-homepage">
-      {/* Header Section */}
+      
       <header className="header">
         <div className="header-content">
           <div className="header-image">
-            <img 
+            {/* <img 
               src={Photo}
               className="profile-image" alt="Description of your image" 
-            />
+            /> */}
+            <img src="some-image.png" alt="description" />
+
           </div>
           <div className="header-text">
             <h2>HI, I'm</h2>
