@@ -1,0 +1,110 @@
+
+.navbar {
+  padding: 0.6rem 0;
+  position: fixed; /* Makes the navbar stay in place */
+  top: 0;          /* Positions it at the very top */
+  left: 0;         /* Aligns it to the left edge */
+  width: 100%;     /* Makes it full width */
+  z-index: 1000;   /* Ensures it stays above other content */
+  background-color: #fff; /* Add a background color (adjust as needed) */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Navigation links - desktop view */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Icons section */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Mobile menu button - hidden on desktop */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Hide regular nav links */
+  .navbar {
+  background-color: #ffffff;
+  
+}
+
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Show mobile menu when active */
+  .navbar-links.active {
+    left: 0;
+  }
+
+  /* Show mobile menu button */
+  .mobile-menu-btn {
+    display: block;
+    z-index: 1001;
+  }
+
+  /* Add overlay when menu is open */
+  .navbar-links.active ~ .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+}

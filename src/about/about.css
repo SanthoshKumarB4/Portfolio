@@ -1,0 +1,246 @@
+/* Base Styles */
+.about-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.about-hero-section {
+background: linear-gradient(135deg, #0c0e11 0%, #1e3646 50%, #0c0e11 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+
+/* Introduction Section */
+.about-intro-section {
+  padding: 40px 0;
+}
+
+.about-intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-section-title {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.about-text {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.about-skills-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-skills-title {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.about-skill-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.about-skill-name {
+  font-weight: 600;
+}
+
+/* Projects Section */
+.about-projects-section {
+  padding: 30px 0;
+}
+
+.about-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.about-project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-project-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.about-project-description {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  margin: 25px 0 15px;
+  color: #2c3e50;
+}
+
+.about-responsibilities-list {
+  padding-left: 20px;
+}
+
+.about-responsibility-item {
+  margin-bottom: 8px;
+}
+
+.about-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-tech-tag {
+  background: #e0e0e0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Philosophy Section */
+.about-philosophy-section {
+  padding: 30px 0;
+}
+
+.about-philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.about-philosophy-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.about-philosophy-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-philosophy-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-philosophy-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.about-philosophy-text {
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .about-section-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-intro-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 60px 0;
+  }
+  
+  .about-hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  
+  .about-project-card {
+    padding: 20px;
+  }
+}
