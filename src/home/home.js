@@ -35,7 +35,7 @@ const PortfolioHomepage = () => {
           <div className="header-image">
             <img 
               src={Photo}
-              className="profile-image"
+              className="profile-image" alt="Description of your image" 
             />
           </div>
           <div className="header-text">
