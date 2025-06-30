@@ -33,11 +33,11 @@ const PortfolioHomepage = () => {
       <header className="header">
         <div className="header-content">
           <div className="header-image">
-            <img 
+            {/* <img 
               src={Photo}
               className="profile-image" alt="Description of your image" 
             />
-            
+             */}
           </div>
           <div className="header-text">
             <h2>HI, I'm</h2>
