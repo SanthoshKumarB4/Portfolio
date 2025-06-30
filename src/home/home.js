@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import Photo from "../assets/photo.jpeg";
+// import Photo from "../assets/photo.jpeg";
 
 const PortfolioHomepage = () => {
   const projects = [
